@@ -15,11 +15,6 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.get('/testcase', (req, res) => {
-  console.log('Mushahid')
-  res.status(200).json({ status: 'success', message: 'Chalra Hai' });
-});
-
 app.use(session({
   secret: 'secret_key',
   resave: false,
